@@ -87,13 +87,15 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent-color);
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--purple) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: 28px;
+    font-weight: bold;
+    color: #C784FA;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+    opacity: 0.8;
 }
 
 .nav-links {
