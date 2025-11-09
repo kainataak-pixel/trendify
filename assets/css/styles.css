@@ -489,6 +489,11 @@ footer {
     animation: fadeIn 0.3s ease-in-out;
 }
 
+/* Hide popup when URL contains #popup-closed hash */
+#popup-closed:target ~ .creator-popup-overlay {
+    display: none;
+}
+
 .creator-popup {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 1rem;
@@ -561,6 +566,8 @@ footer {
     justify-content: center;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+    text-decoration: none;
+    line-height: 1;
 }
 
 .creator-popup .close-btn:hover {
@@ -574,10 +581,6 @@ footer {
     font-size: 1.2rem;
 }
 
-/* Hide popup when checkbox is checked */
-.creator-popup-toggle:checked ~ .creator-popup-overlay {
-    display: none;
-}
 
 @keyframes fadeIn {
     from {

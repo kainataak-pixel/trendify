@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 <body>
-    <!-- Creator Popup Modal -->
-    <input type="checkbox" id="creator-popup-toggle" class="creator-popup-toggle">
+    <!-- Creator Popup Modal - Only shows on homepage (first visit) -->
+    <span id="popup-closed"></span>
     <div class="creator-popup-overlay">
         <div class="creator-popup">
-            <label for="creator-popup-toggle" class="close-btn" aria-label="Close">×</label>
+            <a href="#popup-closed" class="close-btn" aria-label="Close">×</a>
             <h2>👨‍💻 Website Creator</h2>
             <p>This website was beautifully crafted by</p>
             <div class="creator-name">Kainat Memon</div>
