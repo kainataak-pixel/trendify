@@ -507,6 +507,120 @@ main {
     min-height: 150px;
 }
 
+/* ===== AFFILIATE PROGRAM ===== */
+.affiliate-hero {
+    background: linear-gradient(135deg, #D8C8FF 0%, #FFB3A7 100%);
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.affiliate-hero h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.affiliate-hero p {
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.affiliate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.affiliate-card {
+    background-color: var(--bg-light);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.affiliate-card h2 {
+    margin-bottom: 1rem;
+}
+
+.affiliate-card ol,
+.affiliate-card ul {
+    margin-left: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.affiliate-signup {
+    background-color: var(--bg-light);
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: var(--shadow);
+}
+
+.affiliate-signup h2 {
+    margin-bottom: 1rem;
+}
+
+.affiliate-banner-section {
+    background-color: var(--bg-light);
+    padding: 4rem 0;
+}
+
+.affiliate-banner-preview {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 1rem;
+    padding: 3rem;
+    color: white;
+    text-align: center;
+    margin: 2rem 0;
+    box-shadow: var(--shadow-lg);
+}
+
+.affiliate-banner-content h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.affiliate-banner-content p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+}
+
+.affiliate-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.affiliate-code-block {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.affiliate-code-block h3 {
+    margin-bottom: 1rem;
+}
+
+.affiliate-code-block pre {
+    background-color: var(--bg-light);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+
+.affiliate-code-block code {
+    font-family: "Courier New", Courier, monospace;
+    color: var(--text-dark);
+}
+
 /* ===== FOOTER ===== */
 footer {
     background-color: var(--text-dark);
@@ -787,6 +901,14 @@ footer {
 
 /* Responsive design for popup */
 @media (max-width: 768px) {
+    .affiliate-banner-preview {
+        padding: 2rem;
+    }
+
+    .affiliate-banner-content h3 {
+        font-size: 1.5rem;
+    }
+
     .creator-popup {
         padding: 2rem 1.5rem;
         max-width: 90%;
